@@ -1,4 +1,4 @@
-export default function checkedBox(tasks) {
+export function checkedBox(tasks) {
     const checkboxes = document.querySelectorAll('.checkbox');
     checkboxes.forEach((checkbox) => {
       checkbox.addEventListener('change', () => {

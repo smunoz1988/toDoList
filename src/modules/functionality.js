@@ -32,10 +32,21 @@ export default class TaskList {
     });
     this.addDeleteListeners();
     this.checkbox();
+    this.deleteAllCompleted();
   }
 
   checkbox() {
     checkedBox(this.tasks);
+  }
+
+  deleteAllCompleted() {
+    const deleteCompletedBtn = document.getElementById('clearAllButton');
+    deleteCompletedBtn.addEventListener('click', () => {
+      this.tasks = this.tasks.filter((task) => !task.completed);
+      localStorage.setItem('data', JSON.stringify(this.tasks));
+      this.renderTaskList();
+      console.log(this.tasks);
+    })
   }
 
   addTask(event) {
