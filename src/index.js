@@ -2,4 +2,8 @@ import './style.css';
 import TaskList from './modules/functionality.js';
 
 const taskList = new TaskList();
-window.onload = taskList.renderTaskList();
+taskList.loadTask();
+taskList.addTask();
+taskList.removeTask();
+taskList.editTask();
+taskList.renderTask();

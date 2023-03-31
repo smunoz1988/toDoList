@@ -28,11 +28,11 @@ h1 {
   border-radius: 5px;
 }
 
-#container {
+.container {
   width: 100%;
 }
 
-.listItems {
+.listElement {
   display: flex;
   justify-content: space-between;
   border-bottom: solid 0.5px gray;
@@ -43,7 +43,7 @@ form {
   width: 100%;
 }
 
-.formItem {
+#listTitle {
   width: 100%;
   padding: 1rem;
   color: grey;
@@ -65,7 +65,7 @@ form {
   border: none;
 }
 
-.clearAll {
+.clear {
   display: flex;
   justify-content: center;
   padding: 1.5rem;

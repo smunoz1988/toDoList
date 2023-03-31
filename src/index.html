@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="To Do List using ES6, webpack and modules">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6e8f4ae605.js" crossorigin="anonymous"></script>
     <title>To Do List</title>
 </head>
+
 <body>
-    <h1>To Do List</h1>
+    <h1 id="title">Personal To do list</h1>
+
     <section id="main">
-        <form>
-            <div class="topItems">
-                <p class="formItem">Today's To Do</p>
-                <i class="fa-solid fa-arrows-rotate"></i>
-            </div>
-            <div class="topItems">
-                <input type="text" id="inputTask" placeholder="Add to your list...">
-                <i class="fa-solid fa-arrow-turn-down"></i>
+        <form id="addToList">
+            <p id="listTitle" class="listElement">Santiago's today's To Do</p>
+            <div class="listElement addCont">
+                <div id="toDo">
+                    <input class="addToInput" type="text" placeholder="Add to your list..."/></input>
+                    <i id="addIcon" class="fa-solid fa-plus icon"></i>    
+                </div>
             </div>
         </form>
-        <ul id="container"></ul>
-        <button type="button" id="clearAllButton" class="clearAll">Clear all completed</button>
+        <ul class="container"></ul>
+        <button type="button" class="clear"><span>Clear all completed</span></button>
     </section>
-    </hi>
 </body>
+
 </html>
