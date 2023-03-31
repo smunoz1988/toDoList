@@ -48,20 +48,23 @@ form {
   padding: 1rem;
   color: grey;
   font-weight: 900;
+  justify-content: center;
 }
 
-#inputTask {
+#toDo {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding: 1rem;
+  align-items: center;
+}
+
+.toDoTask {
   border: none;
 }
 
-.itemDescriptionContainer {
-  display: flex;
-}
-
-.itemDescription {
-  padding-left: 1rem;
+.addToInput {
+  width: 100%;
+  padding: 1rem;
   border: none;
 }
 
@@ -74,13 +77,7 @@ form {
   width: 100%;
 }
 
-.topItems {
-  display: flex;
-  border-bottom: solid 0.5px gray;
-}
-
-.topItems i {
-  display: flex;
-  align-items: center;
-  padding-right: 0.6rem;
+.clear:hover {
+  background-color: black;
+  color: white;
 }
